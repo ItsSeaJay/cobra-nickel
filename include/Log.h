@@ -21,7 +21,7 @@ namespace CobraNickel
 			Error
 		};
 
-		const std::ostringstream& get(Level level);
+		std::ostringstream& get(Level level);
 
 	protected:
 		std::ostringstream mOutputStream;
