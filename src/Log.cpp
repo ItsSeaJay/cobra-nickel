@@ -6,6 +6,7 @@ CobraNickel::Log::Log()
 
 CobraNickel::Log::~Log()
 {
+	mOutputStream << std::endl;
 }
 
 const std::ostringstream& CobraNickel::Log::get(Level level)

@@ -14,7 +14,6 @@ include_directories(include)
 
 add_library(${LIBRARY_NAME} ${SOURCES} ${INCLUDES})
 
-
 set(COBRA_NICKEL_BUILD_TEST TRUE CACHE BOOL "Build with test")
 
 if(COBRA_NICKEL_BUILD_TEST)
