@@ -21,13 +21,29 @@ namespace CobraNickel
 			Error
 		};
 
-		std::ostringstream& get(Level level);
+		template<class T>
+		void log(Level level, const T& data)
+		{
+			mOutputStream << data;
+
+			std::cout << mOutputStream.str();
+
+			clearOutputStream();
+		}
+
+		template<class T>
+		void log(const T& data)
+		{
+			log(mLevel, data);
+		}
 
 	protected:
 		std::ostringstream mOutputStream;
 
 	private:
-		Level mLevel;
+		Level mLevel = Level::Info;
+
+		void clearOutputStream();
 	};
 }
 
