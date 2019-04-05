@@ -5,4 +5,4 @@ set(SOURCES
 
 add_executable(cout ${SOURCES})
 
-target_link_libraries(CobraNickel)
+target_link_libraries(cout CobraNickel)
