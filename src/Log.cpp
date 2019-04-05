@@ -9,7 +9,7 @@ CobraNickel::Log::~Log()
 	mOutputStream << std::endl;
 }
 
-const std::ostringstream& CobraNickel::Log::get(Level level)
+std::ostringstream& CobraNickel::Log::get(Level level)
 {
 	std::time_t t = std::time(0);
 	std::tm* now = std::localtime(&t);
