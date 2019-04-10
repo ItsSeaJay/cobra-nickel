@@ -1,12 +1,13 @@
 #include <iostream>
 
-#include "Log.h"
+#include "Logger.h"
 
 int main(int arc, char** argv)
 {
-	CobraNickel::Log log;
+	CobraNickel::Logger log;
 
-	log.log("test");
+	log << "Once they start fighting, "
+		<< "They won't want to stop.";
 
 	return 0;
 }
