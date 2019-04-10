@@ -1,4 +1,4 @@
-#include "Log.h"
+#include "Logger.h"
 
 CobraNickel::Logger::Logger()
 {

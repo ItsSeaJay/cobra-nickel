@@ -38,11 +38,11 @@ namespace CobraNickel
 		}
 
 		template<class T>
-		std::ostringstream& operator<<(const T& data)
+		Logger& operator<<(const T& data)
 		{
 			log(data);
 
-			return mOutputStream;
+			return *this;
 		}
 
 	protected:
