@@ -6,8 +6,7 @@ int main(int arc, char** argv)
 {
 	CobraNickel::Logger log;
 
-	log << "Once they start fighting, "
-		<< "They won't want to stop.";
+	log << "They fought " << 5 << "times.";
 
 	return 0;
 }
