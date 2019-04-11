@@ -6,9 +6,11 @@ set(LIBRARY_NAME
 project(${LIBRARY_NAME} VERSION 0.1.0 LANGUAGES CXX)
 
 set(SOURCES
-	src/Logger.cpp)
+	src/Logger.cpp
+	src/OutputSource.cpp)
 set(INCLUDES
-	include/CobraNickel/Logger.h)
+	include/CobraNickel/Logger.h
+	include/CobraNickel/OutputSource.h)
 
 include_directories(include)
 
