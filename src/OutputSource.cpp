@@ -1,10 +1,1 @@
-#include "OutputSource.h"
-
-OutputSource::OutputSource()
-{
-}
-
-
-OutputSource::~OutputSource()
-{
-}
+#include "CobraNickel/OutputSource.h"
