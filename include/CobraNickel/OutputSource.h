@@ -1,8 +1,7 @@
 #pragma once
 
-#ifndef COBRA_NICKEL_OUTPUT_SOURCE_H
-
 #include "CobraNickel/Logger.h"
+#include "CobraNickel/ConsoleOutputSource.h"
 
 #include <memory>
 #include <string>
@@ -15,11 +14,9 @@ namespace CobraNickel
 		virtual ~OutputSource() = default;
 		using Pointer = std::unique_ptr<OutputSource>;
 		
-		virtual void log(Logger::Level level, const std::string& input) = 0;
+		virtual void log(Logger::Level, const std::string& input) = 0;
 
 	protected:
 		OutputSource() = default;
 	};
 }
-
-#endif

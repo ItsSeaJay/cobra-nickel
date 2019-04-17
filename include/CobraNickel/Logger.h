@@ -1,8 +1,5 @@
 #pragma once
 
-#ifndef COBRA_NICKEL_LOG_H
-#define COBRA_NICKEL_LOG_H
-
 #include <ctime>
 #include <iostream>
 #include <memory>
@@ -19,7 +16,7 @@ namespace CobraNickel
 		Logger();
 		virtual ~Logger();
 
-		enum class Level {
+		static enum class Level {
 			Info,
 			Warning,
 			Error
@@ -66,5 +63,3 @@ namespace CobraNickel
 		void clearOutputStream();
 	};
 }
-
-#endif

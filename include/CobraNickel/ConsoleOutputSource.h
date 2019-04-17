@@ -1,8 +1,5 @@
 #pragma once
 
-#ifndef COBRA_NICKEL_CONSOLE_OUTPUT_SOURCE_H
-#define COBRA_NICKEL_CONSOLE_OUTPUT_SOURCE_H
-
 #include <iostream>
 
 #include "CobraNickel/OutputSource.h"
@@ -10,11 +7,9 @@
 
 namespace CobraNickel
 {
-	class ConsoleOutputSource : public OutputSource
+	class ConsoleOutputSource : OutputSource
 	{
 	public:
-		void log(Logger::Level level, const std::string& message) override;
+		void log(Logger::Level level, const std::string& message);
 	};
 }
-
-#endif
