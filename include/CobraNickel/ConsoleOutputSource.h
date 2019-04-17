@@ -7,7 +7,7 @@
 
 namespace CobraNickel
 {
-	class ConsoleOutputSource : OutputSource
+	class ConsoleOutputSource : public OutputSource
 	{
 	public:
 		void log(Logger::Level level, const std::string& message);

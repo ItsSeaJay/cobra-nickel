@@ -1,7 +1,6 @@
 #pragma once
 
 #include "CobraNickel/Logger.h"
-#include "CobraNickel/ConsoleOutputSource.h"
 
 #include <memory>
 #include <string>
