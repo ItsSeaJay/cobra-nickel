@@ -27,6 +27,11 @@ std::string CobraNickel::Logger::levelToString(Level level)
 	}
 }
 
+void CobraNickel::Logger::addSource(OutputSource::Pointer source)
+{
+	mOutputSources.push_back(source);
+}
+
 void CobraNickel::Logger::clearOutputStream()
 {
 	mOutputStream.str("");

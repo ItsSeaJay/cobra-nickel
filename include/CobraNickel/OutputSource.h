@@ -4,6 +4,7 @@
 
 #include "CobraNickel/Logger.h"
 
+#include <memory>
 #include <string>
 
 namespace CobraNickel
@@ -12,7 +13,6 @@ namespace CobraNickel
 	{
 	public:
 		virtual ~OutputSource() = default;
-
 		using Pointer = std::unique_ptr<OutputSource>;
 		
 		virtual void log(Logger::Level level, const std::string& input) = 0;

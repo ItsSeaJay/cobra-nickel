@@ -1,6 +1,7 @@
 #include <iostream>
 
-#include "Logger.h"
+#include "CobraNickel/Logger.h"
+#include "CobraNickel/ConsoleOutputSource.h"
 
 int main(int arc, char** argv)
 {

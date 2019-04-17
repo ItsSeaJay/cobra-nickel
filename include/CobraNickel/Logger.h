@@ -5,6 +5,7 @@
 
 #include <ctime>
 #include <iostream>
+#include <memory>
 #include <sstream>
 #include <vector>
 
@@ -26,10 +27,17 @@ namespace CobraNickel
 
 		static std::string levelToString(Level level);
 
+		void addSource(OutputSource::Pointer source);
+
 		template<class T>
 		void log(Level level, const T& data)
 		{
 			mOutputStream << data;
+
+			for (auto& source : mOutputSources)
+			{
+				source.log(mLevel, mOutputStream.str());
+			}
 
 			clearOutputStream();
 		}
@@ -53,6 +61,7 @@ namespace CobraNickel
 
 	private:
 		Level mLevel = Level::Info;
+		std::vector<OutputSource::Pointer> mOutputSources;
 
 		void clearOutputStream();
 	};

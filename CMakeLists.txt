@@ -7,10 +7,12 @@ project(${LIBRARY_NAME} VERSION 0.1.0 LANGUAGES CXX)
 
 set(SOURCES
 	src/Logger.cpp
-	src/OutputSource.cpp)
+	src/OutputSource.cpp
+	src/ConsoleOutputSource.cpp)
 set(INCLUDES
 	include/CobraNickel/Logger.h
-	include/CobraNickel/OutputSource.h)
+	include/CobraNickel/OutputSource.h
+	include/CobraNickel/ConsoleOutputSource.h)
 
 include_directories(include)
 
