@@ -13,7 +13,7 @@ namespace CobraNickel
 		virtual ~OutputSource() = default;
 		using Pointer = std::unique_ptr<OutputSource>;
 		
-		virtual void log(Logger::Level, const std::string& input) = 0;
+		virtual void log(Logger::Level level, const std::string& input) = 0;
 
 	protected:
 		OutputSource() = default;

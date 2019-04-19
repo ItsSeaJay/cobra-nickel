@@ -16,7 +16,8 @@ namespace CobraNickel
 		Logger();
 		virtual ~Logger();
 
-		static enum class Level {
+		static enum class Level
+		{
 			Info,
 			Warning,
 			Error
