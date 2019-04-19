@@ -7,7 +7,9 @@ int main(int arc, char** argv)
 {
 	CobraNickel::Logger log;
 
-	log << "They fought " << 5 << "times.";
+	log.addSource(std::make_unique<CobraNickel::ConsoleOutputSource>());
+	log.log("Hello to the console from CobraNickel!");
+	log << "You can also use overloads!";
 
 	return 0;
 }

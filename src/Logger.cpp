@@ -29,7 +29,7 @@ std::string CobraNickel::Logger::levelToString(Level level)
 
 void CobraNickel::Logger::addSource(OutputSource::Pointer source)
 {
-	mOutputSources.push_back(std::move(source));
+	mOutputSources.emplace_back(std::move(source));
 }
 
 void CobraNickel::Logger::clearOutputStream()

@@ -28,7 +28,7 @@ namespace CobraNickel
 
 			for (auto& source : mOutputSources)
 			{
-				source.log(mLevel, mOutputStream.str());
+				source->log(mLevel, mOutputStream.str());
 			}
 
 			clearOutputStream();

@@ -8,9 +8,9 @@
 
 namespace CobraNickel
 {
-	class ConsoleOutputSource : public OutputSource
+	class ConsoleOutputSource final : public OutputSource
 	{
 	public:
-		void log(Level level, const std::string& message);
+		void log(Level level, const std::string& message) override;
 	};
 }
