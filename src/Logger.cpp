@@ -12,13 +12,13 @@ std::string CobraNickel::Logger::levelToString(Level level)
 {
 	switch (level)
 	{
-	case CobraNickel::Logger::Level::Info:
+	case CobraNickel::Level::Info:
 		return "Info";
 		break;
-	case CobraNickel::Logger::Level::Warning:
+	case CobraNickel::Level::Warning:
 		return "Warning";
 		break;
-	case CobraNickel::Logger::Level::Error:
+	case CobraNickel::Level::Error:
 		return "Error";
 		break;
 	default:

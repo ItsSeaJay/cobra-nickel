@@ -11,6 +11,7 @@ set(SOURCES
 	src/ConsoleOutputSource.cpp)
 set(INCLUDES
 	include/CobraNickel/Logger.h
+	include/CobraNickel/Level.h
 	include/CobraNickel/OutputSource.h
 	include/CobraNickel/ConsoleOutputSource.h)
 

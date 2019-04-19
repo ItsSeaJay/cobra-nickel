@@ -1,9 +1,9 @@
 #pragma once
 
-#include "CobraNickel/Logger.h"
-
 #include <memory>
 #include <string>
+
+#include "CobraNickel/Level.h"
 
 namespace CobraNickel
 {
@@ -13,7 +13,7 @@ namespace CobraNickel
 		virtual ~OutputSource() = default;
 		using Pointer = std::unique_ptr<OutputSource>;
 		
-		virtual void log(Logger::Level level, const std::string& input) = 0;
+		virtual void log(Level level, const std::string& input) = 0;
 
 	protected:
 		OutputSource() = default;

@@ -4,12 +4,13 @@
 
 #include "CobraNickel/OutputSource.h"
 #include "CobraNickel/Logger.h"
+#include "CobraNickel/Level.h"
 
 namespace CobraNickel
 {
 	class ConsoleOutputSource : public OutputSource
 	{
 	public:
-		void log(Logger::Level level, const std::string& message);
+		void log(Level level, const std::string& message);
 	};
 }

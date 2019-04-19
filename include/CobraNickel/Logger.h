@@ -6,7 +6,8 @@
 #include <sstream>
 #include <vector>
 
-#include "OutputSource.h"
+#include "CobraNickel/Level.h"
+#include "CobraNickel/OutputSource.h"
 
 namespace CobraNickel
 {
@@ -15,13 +16,6 @@ namespace CobraNickel
 	public:
 		Logger();
 		virtual ~Logger();
-
-		static enum class Level
-		{
-			Info,
-			Warning,
-			Error
-		};
 
 		static std::string levelToString(Level level);
 
