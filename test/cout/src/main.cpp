@@ -5,11 +5,11 @@
 
 int main(int arc, char** argv)
 {
-	CobraNickel::Logger log;
+	CobraNickel::Logger logger;
 
-	log.addSource(std::make_unique<CobraNickel::ConsoleOutputSource>());
-	log.log("Hello to the console from CobraNickel!");
-	log << "You can also use overloads!";
+	logger.addSource(std::make_unique<CobraNickel::ConsoleOutputSource>());
+	logger.log("Hello to the console from CobraNickel!" + 1);
+	logger << "You can also use overloads!";
 
 	return 0;
 }

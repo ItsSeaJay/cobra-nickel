@@ -1,6 +1,8 @@
 #pragma once
 
 #include <iostream>
+#include <string>
+#include <sstream>
 
 #include "CobraNickel/OutputSource.h"
 #include "CobraNickel/Logger.h"
@@ -12,5 +14,8 @@ namespace CobraNickel
 	{
 	public:
 		void log(Level level, const std::string& message) override;
+
+	private:
+		std::ostringstream mStringStream;
 	};
 }
