@@ -21,10 +21,7 @@ namespace CobraNickel
 			}
 		}
 
-		void log(Level level, const std::string& message) override
-		{
-			mFile << message << std::endl;
-		}
+		void log(Level level, const std::string& message) override;
 
 	private:
 		std::ofstream mFile;
